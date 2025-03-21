@@ -24,6 +24,6 @@ class ApiController extends Controller
             $menu->category = $request->category;
         }
         $menu->save();
-        return $menu;
+        return response()->json($menu, 201);
     }
 }
